@@ -8,7 +8,7 @@ The success of the normalisation is confirmed by the fact that the peaks are wel
 
 Visualisation of the squiggle splits of a small section of a read:
 1. the blue line corresponds to the normalised signal
-2. the red dots correspond to split points
+2. the red dots correspond to split points and the confidence of the split
 3. the yellow line corresponds to the average signal intensity (with std) of each squiggle
 
 <img width="1581" height="940" alt="split_squiggles" src="https://github.com/user-attachments/assets/ba07178e-ee2e-4344-ac42-38242ebdcd11" />
