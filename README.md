@@ -5,7 +5,8 @@ The success of the normalisation is confirmed by the fact that the peaks are wel
 
 <img width="640" height="480" alt="normalised_signal_distribution" src="https://github.com/user-attachments/assets/5a4f8008-ca37-4ca4-a4e3-929178967b69" />
 
-Visualisation of the squiggle splits:
+
+Visualisation of the squiggle splits of a small section of a read:
 1. the blue line corresponds to the normalised signal
 2. the red dots correspond to split points
 3. the yellow line corresponds to the average signal intensity (with std) of each squiggle
