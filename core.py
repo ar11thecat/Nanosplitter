@@ -16,7 +16,7 @@ from .pbar import PBar
 logger = logging.getLogger(__name__)
 
 
-class CallTrainer:
+class Splitter:
 
     def __init__(self, sigseq_path: str=""):
 
@@ -48,7 +48,6 @@ class CallTrainer:
 
         logger.info(f"Set sigseq file to {self._ss_path.resolve()}")
 
-    word = 'pippo'
     @dc.embellish(logger,
                   message="Iterating sigseq data...")
     def iter_reads(self) -> iter:
@@ -74,7 +73,7 @@ class CallTrainer:
     @dc.timeit(logger, separate=True)
     def normalise(sig: ndarray, visualise=False) -> ndarray:
 
-        norm_sig = pu.percMinmaxNorm(sig, 10000)
+        norm_sig = pu.percMinmaxNorm(sig, 2000)
 
         if visualise:
             plt.hist(norm_sig, bins=50)
@@ -96,7 +95,7 @@ class CallTrainer:
         gains = np.concatenate([gains_1, gains_2], axis=0)
         splits, vals = pu.consensus(opts, gains, 4)
         squigs = np.split(sig, splits)
-        features = CallTrainer.featLoader(squigs)
+        features = __class__.featLoader(squigs)
 
         if visualise:
             plt.plot(sig)

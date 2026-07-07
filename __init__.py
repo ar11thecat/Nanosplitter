@@ -1,5 +1,6 @@
 from . import log
-from .core import CallTrainer
+from .core import Splitter
+from .pod5_handler import Pod5Handler
 
 __version__ = "0.1.0"
 
