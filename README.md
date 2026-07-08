@@ -2,7 +2,7 @@
 ## What it does
 Nanosplitter finds "optimal" points to split a raw nanopore signal array into distinct squiggles, from which it extracts features to return in a feature array. It can be used purely for visualisation, or for downstream processing such as basecalling. It is meant as a Pyhton tool to use in other projects.
 ## Some results
-For these results, I used a free dataset provided by the main Nanopore manufacturer (ONT), available at `s3://ont-open-data/chrom_acc_2025.06/raw/PAY22766/`.
+For these results, I used a free dataset provided by the main Nanopore manufacturer (ONT), available at `s3://ont-open-data/chrom_acc_2025.06/`.
 ### Visualisation of the squiggle splits:
 1. the blue line corresponds to the normalised signal
 2. the red dots correspond to split points and the confidence of the split
