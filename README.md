@@ -34,8 +34,8 @@ def main():
     
     for _ in range(100):
         _, signal = next(reads)
-        norm_signal = normalise(signal, visualise=False)
-        features = split(norm_signal, visualise=False)        
+        norm_signal = normalise(signal, visualise=True)
+        features = split(norm_signal, visualise=True)        
 
     return
 
